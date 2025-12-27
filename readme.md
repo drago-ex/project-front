@@ -11,6 +11,5 @@ Preconfigured basic frontend module for the basic Drago Project.
 
 ## Install
 ```bash
-composer config --no-plugins allow-plugins.drago-ex/project-front true
 composer require drago-ex/project-front
 ```

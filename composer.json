@@ -1,21 +1,21 @@
 {
 	"name": "drago-ex/project-front",
-	"type": "composer-plugin",
+	"type": "drago-project-resource",
 	"description": "The package adds a basic frontend module to Drago Project.",
 	"require": {
 		"php": ">=8.3 <9",
-		"nette/di": "^3.2",
 		"drago-ex/translator": "^1.0",
 		"drago-ex/application": "^1.0",
 		"composer-plugin-api": "^2.3"
 	},
-	"autoload": {
-		"psr-4": {
-			"DragoFrontPlugin\\": "src/"
-		}
-	},
 	"extra": {
-		"class": "DragoFrontPlugin\\Composer\\Plugin"
+		"drago-project": {
+			"install": {
+				"copy": {
+					"resources/app": "app"
+				}
+			}
+		}
 	},
 	"require-dev": {
 		"composer/composer": "^2.9",
