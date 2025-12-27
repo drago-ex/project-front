@@ -6,6 +6,7 @@ Preconfigured basic frontend module for the basic Drago Project.
 
 ## Requirements
 - PHP >= 8.3
+- Nette Framework
 - Drago Project core packages
 
 ## Install
