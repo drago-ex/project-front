@@ -5,8 +5,8 @@
 	"require": {
 		"php": ">=8.3 <9",
 		"nette/di": "^3.2",
-	  	"drago-ex/translator": "^1.0",
-	  	"drago-ex/application": "^1.0",
+		"drago-ex/translator": "^1.0",
+		"drago-ex/application": "^1.0",
 		"composer-plugin-api": "^2.3"
 	},
 	"autoload": {
