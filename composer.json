@@ -1,5 +1,5 @@
 {
-	"name": "drago-ex/project-user",
+	"name": "drago-ex/project-front",
 	"type": "composer-plugin",
 	"description": "The package adds a basic frontend module to Drago Project.",
 	"require": {
