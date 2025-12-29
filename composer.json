@@ -2,6 +2,7 @@
 	"name": "drago-ex/project-front",
 	"type": "drago-project-resource",
 	"description": "The package adds a basic frontend module to Drago Project.",
+	"license": ["MIT"],
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/translator": "^1.0",
