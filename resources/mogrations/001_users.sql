@@ -4,9 +4,9 @@
 CREATE TABLE users (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
-    email VARCHAR(255) NOT NULL,
+    email VARCHAR(50) NOT NULL,
     password VARCHAR(60) NOT NULL,
-    token VARCHAR(64) NOT NULL,
+    token VARCHAR(32) NOT NULL,
     CONSTRAINT uq_users_email UNIQUE (email)
 )
 ENGINE = InnoDB
