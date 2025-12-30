@@ -14,7 +14,7 @@
 				"copy": {
 					"resources/app": "app",
 					"resources/assets": "assets",
-					"resources/mogrations": "mogrations"
+					"resources/migrations": "migrations"
 				}
 			}
 		}
