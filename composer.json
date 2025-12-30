@@ -13,8 +13,7 @@
 			"install": {
 				"copy": {
 					"resources/app": "app",
-					"resources/assets": "assets",
-					"resources/migrations": "migrations"
+					"resources/assets": "assets"
 				}
 			}
 		}
