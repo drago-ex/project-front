@@ -5,7 +5,7 @@
 	"license": ["MIT"],
 	"require": {
 		"php": ">=8.3 <9",
-		"drago-ex/translator": "^1.0",
+		"drago-ex/translator": "^2.0",
 		"drago-ex/application": "^1.0"
 	},
 	"extra": {
