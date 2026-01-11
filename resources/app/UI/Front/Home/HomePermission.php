@@ -16,6 +16,7 @@ final class HomePermission implements Provider
 {
 	private const string Resource = 'Front:Home';
 
+
 	public function register(Permission $acl): void
 	{
 		$acl->addResource(self::Resource);
