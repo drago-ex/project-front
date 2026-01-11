@@ -2,3 +2,7 @@ services:
 
 	router: {factory: Nette\Application\Routers\RouteList, setup: {offsetSet(null, @router.front)}}
 	router.front: {factory: App\UI\Front\Router::create, autowired: no}
+
+	homePermission:
+		class: App\UI\Front\Home\HomePermission
+		tags: [PermisionTag]
