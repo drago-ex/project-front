@@ -21,6 +21,9 @@
 	"require-dev": {
 		"phpstan/phpstan-nette": "^1.2.9"
 	},
+	"bin": [
+		"bin/create-front-permission"
+	],
 	"scripts": {
 		"phpstan": "phpstan analyse --level 5 --configuration phpstan.neon resources/app"
 	}
