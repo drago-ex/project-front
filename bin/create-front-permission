@@ -21,8 +21,8 @@ while (true) {
 }
 
 if ($generator === null) {
-	fwrite(STDERR, "ERR Generator not found.\n");
-	fwrite(STDERR, "ERR Install dependency first: composer require drago-ex/permission\n");
+	fwrite(STDERR, "Generator not found.\n");
+	fwrite(STDERR, "Install dependency first: composer require drago-ex/permission\n");
 	exit(1);
 }
 
