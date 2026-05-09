@@ -14,3 +14,9 @@ Preconfigured basic frontend module for the basic Drago Project.
 ```bash
 composer require drago-ex/project-front
 ```
+
+## Generate permission provider
+If you use project ACL (drago-ex/permission), you can generate a module permission class:
+```bash
+php vendor/bin/create-front-permission
+```
