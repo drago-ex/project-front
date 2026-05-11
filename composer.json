@@ -17,7 +17,7 @@
 				}
 			},
 			"commands": {
-				"create:frontend-permission": "php vendor/bin/create-frontend-permission"
+				"create:front-permission": "php vendor/bin/create-front-permission"
 			}
 		}
 	},
