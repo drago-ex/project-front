@@ -28,6 +28,6 @@
 		"bin/create-front-permission"
 	],
 	"scripts": {
-		"phpstan": "phpstan analyse --level 5 --configuration tests/phpstan.neon resources/app"
+		"phpstan": "phpstan analyse"
 	}
 }

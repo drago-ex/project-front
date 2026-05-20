@@ -28,4 +28,4 @@ jobs:
           coverage: none
 
       - run: composer create-project nette/coding-standard temp/coding-standard ^3 --no-progress
-      - run: php temp/coding-standard/ecs check resources/app
+      - run: php temp/coding-standard/ecs check
