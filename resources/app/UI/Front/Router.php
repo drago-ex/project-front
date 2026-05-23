@@ -13,7 +13,6 @@ final class Router
 {
 	use Nette\StaticClass;
 
-
 	/** Creates and configures the route list for the front-end module. */
 	public static function create(): RouteList
 	{
