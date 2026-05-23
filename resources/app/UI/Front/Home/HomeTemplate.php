@@ -7,10 +7,7 @@ namespace App\UI\Front\Home;
 use App\UI\BaseTemplate;
 
 
-/**
- * HomeTemplate represents the template for rendering the home page in the front-end module.
- */
+/** Template for the home page. */
 class HomeTemplate extends BaseTemplate
 {
-	// This class is currently empty.
 }

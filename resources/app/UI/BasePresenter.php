@@ -9,10 +9,8 @@ use Nette\Application\UI\Presenter;
 
 
 /**
- * Base presenter class for handling common functionality in the application.
- * It includes localization functionality through the TranslatorAdapter trait.
- *
- * @property-read BaseTemplate $template The template used by the presenter
+ * Base presenter for the application.
+ * @property-read BaseTemplate $template
  */
 abstract class BasePresenter extends Presenter
 {
