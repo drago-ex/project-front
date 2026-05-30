@@ -16,6 +16,10 @@ Preconfigured basic frontend module for the basic Drago Project.
 composer require drago-ex/project-front
 ```
 
+## Project files
+The package has `extra.drago-project.skip` set to `false`, so `drago-install` copies the configured files automatically.
+If `skip` is set to `true`, copy those files manually according to the `copy` section in `composer.json`.
+
 ## Generate permission provider
 If you use project ACL (drago-ex/permission), you can generate a module permission class:
 ```bash
