@@ -1,6 +1,6 @@
 {
 	"name": "drago-ex/project-front",
-	"type": "drago-project-resource",
+	"type": "drago-tools-resource",
 	"description": "The package adds a basic frontend module to Drago Project.",
 	"license": ["MIT"],
 	"require": {
@@ -9,7 +9,7 @@
 		"drago-ex/application": "^2.0"
 	},
 	"extra": {
-		"drago-project": {
+		"drago-tools": {
 			"install": {
 				"copy": {
 					"resources/app": "app",
