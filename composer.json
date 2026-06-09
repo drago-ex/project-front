@@ -17,7 +17,7 @@
 				}
 			},
 			"commands": {
-				"create:front-permission": "php vendor/bin/create-front-permission"
+				"create:front-permission": "php vendor/bin/create-permission"
 			}
 		}
 	},
@@ -25,7 +25,7 @@
 		"phpstan/phpstan-nette": "^2.0"
 	},
 	"bin": [
-		"bin/create-front-permission"
+	  "bin/create-permission"
 	],
 	"scripts": {
 		"phpstan": "phpstan analyse"

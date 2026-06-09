@@ -27,7 +27,7 @@ if ($generator === null) {
 }
 
 $args = [
-	'HomePermission',
+	'PermissionProvider',
 	'App\\UI\\Front\\Home',
 	'Front:Home',
 	'app/UI/Front/Home',
