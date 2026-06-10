@@ -25,5 +25,5 @@ in this package's `composer.json`. To skip this package, set `"skip": true` unde
 ## Generate permission provider
 If you use project ACL (drago-ex/permission), you can generate a module permission class:
 ```bash
-php vendor/bin/create-permission
+php vendor/bin/create-auth-permission
 ```
