@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\UI\Front\Home;
+namespace App\Presentation\Front\Home;
 
-use App\UI\BasePresenter;
+use App\Presentation\BasePresenter;
 
 
 /** @property-read HomeTemplate $template */
