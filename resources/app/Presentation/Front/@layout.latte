@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>{ifset title}{include title|stripHtml|firstUpper} &bull;{/ifset} Frontend</title>
+	<title>{ifset title}{include title|stripHtml|firstUpper} &bull; {/ifset} Frontend</title>
 
 	{asset 'front.js'}
 </head>
@@ -19,7 +19,9 @@
 
 	{* flash messages *}
 	{snippet message}
-		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
+			{$flash->message}
+		</div>
 	{/snippet}
 
 	{* page content *}
