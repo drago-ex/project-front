@@ -1,7 +1,7 @@
 {
 	"name": "drago-ex/project-front",
-	"type": "drago-tools-resource",
 	"description": "The package adds a basic frontend module to Drago Project.",
+	"type": "drago-tools-resource",
 	"license": ["MIT"],
 	"require": {
 		"php": ">=8.3 <9",
@@ -10,6 +10,13 @@
 	},
 	"suggest": {
 		"drago-ex/permission": "Enables generation of the frontend permission provider."
+	},
+	"require-dev": {
+		"phpstan/phpstan-nette": "^2.0"
+	},
+	"bin": ["bin/create-front-permission"],
+	"scripts": {
+		"phpstan": "phpstan analyse"
 	},
 	"extra": {
 		"drago-tools": {
@@ -23,14 +30,5 @@
 				"create:front-permission": "php vendor/bin/create-front-permission"
 			}
 		}
-	},
-	"require-dev": {
-		"phpstan/phpstan-nette": "^2.0"
-	},
-	"bin": [
-		"bin/create-front-permission"
-	],
-	"scripts": {
-		"phpstan": "phpstan analyse"
 	}
 }
