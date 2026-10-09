@@ -20,7 +20,7 @@
 	{* flash messages *}
 	{snippet message}
 		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
-			{_$flash->message}
+			{$flash->message}
 		</div>
 	{/snippet}
 
