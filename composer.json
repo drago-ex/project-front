@@ -15,9 +15,6 @@
 		"phpstan/phpstan-nette": "^2.0"
 	},
 	"bin": ["bin/create-front-permission"],
-	"scripts": {
-		"phpstan": "phpstan analyse"
-	},
 	"extra": {
 		"drago-tools": {
 			"install": {
@@ -30,5 +27,8 @@
 				"create:front-permission": "php vendor/bin/create-front-permission"
 			}
 		}
+	},
+	"scripts": {
+		"phpstan": "phpstan analyse"
 	}
 }
