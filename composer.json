@@ -2,7 +2,7 @@
 	"name": "drago-ex/project-front",
 	"description": "The package adds a basic frontend module to Drago Project.",
 	"type": "drago-tools-resource",
-	"license": ["MIT"],
+	"license": "MIT",
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/translator": "^4.0",
@@ -14,7 +14,9 @@
 	"require-dev": {
 		"phpstan/phpstan-nette": "^2.0"
 	},
-	"bin": ["bin/create-front-permission"],
+	"bin": [
+		"bin/create-front-permission"
+	],
 	"extra": {
 		"drago-tools": {
 			"install": {
