@@ -14,9 +14,6 @@
 	"require-dev": {
 		"phpstan/phpstan-nette": "^2.0"
 	},
-	"bin": [
-		"bin/create-front-permission"
-	],
 	"extra": {
 		"drago-tools": {
 			"install": {
@@ -24,11 +21,9 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": {
-				"create:front-permission": "php vendor/bin/create-front-permission"
 			}
-		}
+		},
+		"drago-permission": "permission.php"
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse"
