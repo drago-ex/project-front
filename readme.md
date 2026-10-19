@@ -3,6 +3,7 @@
 Preconfigured frontend module for Drago Project.
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-front.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-front)
+[![Tests](https://github.com/drago-ex/project-front/actions/workflows/tests.yml/badge.svg)](https://github.com/drago-ex/project-front/actions/workflows/tests.yml)
 [![Coding Style](https://github.com/drago-ex/project-front/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/project-front/actions/workflows/coding-style.yml)
 
 ## Requirements
@@ -24,9 +25,11 @@ which must be installed in your project. Without it, copy the files manually acc
 in this package's `composer.json`. To skip this package, set `"skip": true` under
 `extra.drago-tools.packages.<package-name>` in your root `composer.json`.
 
-## Generate permission provider
+## Permission provider
 
-If you use project ACL (drago-ex/permission), you can generate a module permission class:
+With [drago-ex/permission](https://github.com/drago-ex/permission), the access rules from [`permission.php`](permission.php)
+are generated into the project by:
+
 ```bash
-php vendor/bin/create-front-permission
+php vendor/bin/create-permission --packages
 ```

@@ -12,11 +12,9 @@
 		"drago-ex/permission": "Enables generation of the frontend permission provider."
 	},
 	"require-dev": {
+		"nette/tester": "^2.5",
 		"phpstan/phpstan-nette": "^2.0"
 	},
-	"bin": [
-		"bin/create-front-permission"
-	],
 	"extra": {
 		"drago-tools": {
 			"install": {
@@ -24,13 +22,12 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": {
-				"create:front-permission": "php vendor/bin/create-front-permission"
 			}
-		}
+		},
+		"drago-permission": "permission.php"
 	},
 	"scripts": {
-		"phpstan": "phpstan analyse"
+		"phpstan": "phpstan analyse",
+		"tester": "tester tests -s -C"
 	}
 }
