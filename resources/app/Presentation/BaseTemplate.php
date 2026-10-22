@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace App\Presentation;
 
 use Drago\Application\UI\ExtraTemplate;
-use Nette\Application\Attributes\Persistent;
 
 
 abstract class BaseTemplate extends ExtraTemplate
 {
-	#[Persistent]
+	/** Current language, set by TranslatorAdapter before rendering. */
 	public string $lang;
 }
