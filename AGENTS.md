@@ -7,7 +7,7 @@ Use this file as package-specific guidance when working in this repository. Keep
 - **Type**: drago-tools-resource
 - **Purpose**: The package adds a basic frontend module to Drago Project.
 - **PHP**: >=8.3 <9
-- **Runtime dependencies**: drago-ex/translator (^4.0), drago-ex/application (^3.0)
+- **Runtime dependencies**: drago-ex/translator (^4.0), drago-ex/application (^3.0 || ^4.0)
 - **License**: MIT
 
 ## Repository Layout
