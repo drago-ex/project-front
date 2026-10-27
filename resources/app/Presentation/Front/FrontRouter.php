@@ -8,7 +8,7 @@ use Nette;
 use Nette\Application\Routers\RouteList;
 
 
-final class Router
+final class FrontRouter
 {
 	use Nette\StaticClass;
 

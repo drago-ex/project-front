@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Test: App\Presentation\Front\Router
+ * Test: App\Presentation\Front\FrontRouter
  */
 
 declare(strict_types=1);
 
-use App\Presentation\Front\Router;
+use App\Presentation\Front\FrontRouter;
 use Nette\Http\Request;
 use Nette\Http\UrlScript;
 use Tester\Assert;
@@ -16,13 +16,13 @@ require __DIR__ . '/../../bootstrap.php';
 
 function matchUrl(string $path): ?array
 {
-	return Router::create()->match(new Request(new UrlScript('http://example.com' . $path, '/')));
+	return FrontRouter::create()->match(new Request(new UrlScript('http://example.com' . $path, '/')));
 }
 
 
 function buildUrl(array $params): ?string
 {
-	return Router::create()->constructUrl($params, new UrlScript('http://example.com/', '/'));
+	return FrontRouter::create()->constructUrl($params, new UrlScript('http://example.com/', '/'));
 }
 
 
