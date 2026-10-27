@@ -1,7 +1,5 @@
 # Drago Project frontend module
 
-[English](readme.md) | Čeština
-
 Připravený modul pro veřejnou část webu v Drago Project.
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-front.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-front)
