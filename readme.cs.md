@@ -23,11 +23,17 @@ composer require drago-ex/project-front
 Soubory do projektu kopíruje [drago-ex/project-tools](https://github.com/drago-ex/project-tools)
 podle nastavení v `extra.drago-tools` v `composer.json` tohoto balíčku.
 
-## Provider oprávnění
+---
 
-S [drago-ex/permission](https://github.com/drago-ex/permission) se pravidla přístupu z [`permission.php`](permission.php)
+## Volitelné doplňky
+
+Balíček funguje i bez nich. Pokud je projekt potřebuje, nastavte je ručně podle popisu níže.
+
+### Provider oprávnění
+
+S [drago-ex/permission](https://github.com/drago-ex/permission) se pravidla přístupu z [`bin/create-front-permission`](bin/create-front-permission)
 vygenerují do projektu příkazem:
 
 ```bash
-php vendor/bin/create-permission --packages
+php vendor/bin/drago-commands
 ```

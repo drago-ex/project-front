@@ -22,9 +22,11 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			}
-		},
-		"drago-permission": "permission.php"
+			},
+			"commands": [
+				"bin/create-front-permission"
+			]
+		}
 	},
 	"scripts": {
 		"phpstan": "phpstan analyse",

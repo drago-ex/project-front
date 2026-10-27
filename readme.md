@@ -23,11 +23,17 @@ composer require drago-ex/project-front
 The files are copied into the project by [drago-ex/project-tools](https://github.com/drago-ex/project-tools),
 as set in `extra.drago-tools` of this package's `composer.json`.
 
-## Permission provider
+---
 
-With [drago-ex/permission](https://github.com/drago-ex/permission), the access rules from [`permission.php`](permission.php)
+## Optional add-ons
+
+The package works without them. Set them up by hand as described below when the project needs them.
+
+### Permission provider
+
+With [drago-ex/permission](https://github.com/drago-ex/permission), the access rules from [`bin/create-front-permission`](bin/create-front-permission)
 are generated into the project by:
 
 ```bash
-php vendor/bin/create-permission --packages
+php vendor/bin/drago-commands
 ```
