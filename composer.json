@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"php": ">=8.3 <9",
-		"drago-ex/translator": "^4.0 || ^5.0",
-		"drago-ex/application": "^3.0 || ^4.0"
+		"drago-ex/translator": "^4.0",
+		"drago-ex/application": "^4.0"
 	},
 	"suggest": {
 		"drago-ex/permission": "Enables generation of the frontend permission provider."
