@@ -9,8 +9,7 @@ Připravený modul pro veřejnou část webu v Drago Project.
 ## Požadavky
 
 - PHP >= 8.3, < 9
-- Nette Framework
-- Základní balíčky Drago Project
+- [Drago Project](https://github.com/drago-ex/project)
 
 ## Instalace
 
