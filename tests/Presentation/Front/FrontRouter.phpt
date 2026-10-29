@@ -1,10 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Test: App\Presentation\Front\FrontRouter
  */
-
-declare(strict_types=1);
 
 use App\Presentation\Front\FrontRouter;
 use Nette\Http\Request;
