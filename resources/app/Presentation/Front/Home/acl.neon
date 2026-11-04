@@ -1,0 +1,8 @@
+# Everyone may open the home page.
+security:
+	resources:
+		Front:Home:
+
+	rules:
+		allow:
+			- [guest, Front:Home]

@@ -22,17 +22,11 @@ composer require drago-ex/project-front
 Soubory do projektu kopíruje [drago-ex/project-tools](https://github.com/drago-ex/project-tools)
 podle nastavení v `extra.drago-tools` v `composer.json` tohoto balíčku.
 
----
+## Pravidla přístupu
 
-## Volitelné doplňky
+Pravidla přístupu jsou v `app/Presentation/Front/Home/acl.neon`: zdroj `Front:Home` pro všechny.
+[drago-ex/permission](https://github.com/drago-ex/permission) je sloučí se svými výchozími rolemi, ve kterých administrátor smí všechno.
 
-Balíček funguje i bez nich. Pokud je projekt potřebuje, nastavte je ručně podle popisu níže.
-
-### Provider oprávnění
-
-S [drago-ex/permission](https://github.com/drago-ex/permission) se pravidla přístupu z [`bin/create-front-permission`](bin/create-front-permission)
-vygenerují do projektu příkazem:
-
-```bash
-php vendor/bin/drago-commands
-```
+`BasePresenter` je kontroluje traitem `Authorization` z drago-ex/permission: stránku a signály každého presenteru,
+s názvem presenteru jako zdrojem. Nový presenter proto potřebuje svůj zdroj (a pravidlo pro hosty, pokud je veřejný)
+v `acl.neon` vedle sebe; bez něj se zamítne.

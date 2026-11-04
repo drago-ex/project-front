@@ -22,17 +22,11 @@ composer require drago-ex/project-front
 The files are copied into the project by [drago-ex/project-tools](https://github.com/drago-ex/project-tools),
 as set in `extra.drago-tools` of this package's `composer.json`.
 
----
+## Access rules
 
-## Optional add-ons
+The access rules are in `app/Presentation/Front/Home/acl.neon`: the resource `Front:Home` for everyone.
+[drago-ex/permission](https://github.com/drago-ex/permission) merges them with its base roles, in which the administrator is allowed everything.
 
-The package works without them. Set them up by hand as described below when the project needs them.
-
-### Permission provider
-
-With [drago-ex/permission](https://github.com/drago-ex/permission), the access rules from [`bin/create-front-permission`](bin/create-front-permission)
-are generated into the project by:
-
-```bash
-php vendor/bin/drago-commands
-```
+`BasePresenter` checks them by the `Authorization` trait of drago-ex/permission: the page and the signals of every
+presenter, with the presenter name as the resource. A new presenter therefore needs its resource (and a guest rule
+when it is public) in the `acl.neon` next to it; without it the presenter is denied.

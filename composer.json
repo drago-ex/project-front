@@ -6,10 +6,8 @@
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/translator": "^4.0.1",
-		"drago-ex/application": "^4.0"
-	},
-	"suggest": {
-		"drago-ex/permission": "Enables generation of the frontend permission provider."
+		"drago-ex/application": "^4.0",
+		"drago-ex/permission": "^2.0"
 	},
 	"require-dev": {
 		"nette/tester": "^2.5",
@@ -22,10 +20,7 @@
 					"resources/app": "app",
 					"resources/assets": "assets"
 				}
-			},
-			"commands": [
-				"bin/create-front-permission"
-			]
+			}
 		}
 	},
 	"scripts": {

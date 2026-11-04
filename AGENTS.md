@@ -7,11 +7,12 @@ Use this file as package-specific guidance when working in this repository. Keep
 - **Type**: drago-tools-resource
 - **Purpose**: The package adds a basic frontend module to Drago Project.
 - **PHP**: >=8.3 <9
-- **Runtime dependencies**: drago-ex/translator (^4.0.1), drago-ex/application (^4.0)
+- **Runtime dependencies**: drago-ex/translator (^4.0.1), drago-ex/application (^4.0), drago-ex/permission (^2.0)
 - **License**: MIT
 
 ## Repository Layout
-- `bin/create-front-permission`: generates the basic access rules (permission providers) with `create-permission` of `drago-ex/permission`; listed in `extra.drago-tools.commands` and run by `drago-commands` of drago-ex/project-tools. Existing providers are kept; without drago-ex/permission it does nothing.
+- `resources/app/Presentation/Front/Home/acl.neon`: the ACL of the package (resources = presenter names, rules only for roles other than the administrator), merged by Nette with `role.acl.neon` of drago-ex/permission (required); a new presenter gets its resource in the `acl.neon` next to it. No bin script or providers.
+- `resources/app/Presentation/BasePresenter.php` uses the `Authorization` trait of drago-ex/permission (2026-11-03, step 6 of the ACL-in-neon rework): every presenter of every package is checked by the ACL (page = action, signals by `Privilege::forSignal()`), so each one needs a resource in an `acl.neon`; `Error4xxPresenter` of the project extends Nette's `Presenter` and is not checked. project-preset has its own copy of `BasePresenter` with the same trait.
 - `resources/`: application resources contributed to the consuming Drago project.
 - `tests/`: automated tests.
 - `.github/`: CI workflows; keep their PHP versions and commands consistent with Composer and the package scripts.
