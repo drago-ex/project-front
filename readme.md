@@ -1,6 +1,8 @@
-# Drago Project frontend module
+# Drago Project Front
 
-Preconfigured frontend module for Drago Project.
+The website module of Drago Project: `BasePresenter` with the ACL check, the front router with the languages
+`cs`/`en`, a plain layout, the home page and the `front.js`/`front.scss` entry point. It is installed with
+[Drago Project](https://github.com/drago-ex/project).
 
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fproject-front.svg)](https://badge.fury.io/ph/drago-ex%2Fproject-front)
 [![Tests](https://github.com/drago-ex/project-front/actions/workflows/tests.yml/badge.svg)](https://github.com/drago-ex/project-front/actions/workflows/tests.yml)
@@ -17,16 +19,20 @@ Preconfigured frontend module for Drago Project.
 composer require drago-ex/project-front
 ```
 
-## Files copied into the project
+[Project Tools](https://github.com/drago-ex/project-tools) copies the files of the package into the project,
+where you adapt them.
 
-The files are copied into the project by [drago-ex/project-tools](https://github.com/drago-ex/project-tools),
-as set in `extra.drago-tools` of this package's `composer.json`.
+## Usage
 
-## Access rules
+The route `[<lang=cs cs|en>/]<presenter>/<action>` is added by `Front/9.conf.neon`, after the routes of the other
+packages. Presenters of the website extend `App\Presentation\BasePresenter`.
 
-The access rules are in `app/Presentation/Front/Home/acl.neon`: the resource `Front:Home` for everyone.
-[drago-ex/permission](https://github.com/drago-ex/permission) merges them with its base roles, in which the administrator is allowed everything.
+For the website design with a navbar, the user menu and the blog on the home page, add
+[Front UI](https://github.com/drago-ex/project-front-ui).
 
-`BasePresenter` checks them by the `Authorization` trait of drago-ex/permission: the page and the signals of every
-presenter, with the presenter name as the resource. A new presenter therefore needs its resource (and a guest rule
-when it is public) in the `acl.neon` next to it; without it the presenter is denied.
+## Permissions
+
+`BasePresenter` checks every presenter by the `Authorization` trait of
+[drago-ex/permission](https://github.com/drago-ex/permission): its page and signals, with the presenter name as the
+resource. A new presenter needs its resource, and a guest rule when it is public, in an `acl.neon` next to it;
+otherwise it is denied. The rules of the home page are in `Front/Home/acl.neon` (resource `Front:Home`, everyone).
