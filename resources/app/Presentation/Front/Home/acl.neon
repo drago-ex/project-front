@@ -1,4 +1,11 @@
 # Everyone may open the home page.
+parameters:
+	# descriptions for the permissions page of drago-ex/project-permission
+	permissionLabels:
+		Front:Home:
+			default: Home page
+
+
 security:
 	resources:
 		Front:Home:

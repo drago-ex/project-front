@@ -36,3 +36,5 @@ For the website design with a navbar, the user menu and the blog on the home pag
 [drago-ex/permission](https://github.com/drago-ex/permission): its page and signals, with the presenter name as the
 resource. A new presenter needs its resource, and a guest rule when it is public, in an `acl.neon` next to it;
 otherwise it is denied. The rules of the home page are in `Front/Home/acl.neon` (resource `Front:Home`, everyone).
+
+The same file describes the privileges (`permissionLabels`) for the permissions page of [Project Permission](https://github.com/drago-ex/project-permission).
