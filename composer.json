@@ -6,7 +6,7 @@
 	"require": {
 		"php": ">=8.3 <9",
 		"drago-ex/translator": "^4.0.1",
-		"drago-ex/application": "^4.0",
+		"drago-ex/application": "^5.0",
 		"drago-ex/permission": "^2.0"
 	},
 	"require-dev": {
